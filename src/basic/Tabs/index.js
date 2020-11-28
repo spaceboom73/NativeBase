@@ -19,7 +19,7 @@ const { DefaultTabBar } = require('./DefaultTabBar');
 const { ScrollableTabBar } = require('./ScrollableTabBar');
 
 const ScrollableTabView = createReactClass({
-  statics: {
+  statics: {©
     DefaultTabBar,
     ScrollableTabBar
   },
@@ -277,7 +277,7 @@ const ScrollableTabView = createReactClass({
       return;
     }
     this.setState({ containerWidth: width });
-    this.requestAnimationFrame(() => {
+    this.requestAnimationFrame && this.requestAnimationFrame(() => {
       this.goToPage(this.state.currentPage);
     });
   },
